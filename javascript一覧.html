@@ -1,0 +1,686 @@
+<html>
+<head>
+	<title>java一覧</title>
+</head>
+<body>
+&lt;script language="JavaScript"><br>
+<br>
+&lt;/script>　タグか<br>
+<br>
+<br>
+&lt;script language="JavaScript">
+type="text/javascript"><br>
+<br>
+&lt;/script>　タグを使用<br>
+<br>
+<br>
+外部ファイル使用
+&lt;script src="外部ファイルのパス" language="JavaScript"><br>
+<br>
+&lt;/script>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h1 style="color:red">文字列や画像の表示</h1>
+<h3 style="color:blue">●一行の文字列を表示</h3>
+
+<script language="JavaScript">
+	document.write("ようこそJaveScriptの世界へ");
+</script>
+<br>
+<br>
+<br>
+<br>
+<h3 style="color:blue">1-4画像の表示</h3>
+
+
+
+
+
+
+<h3 style="color:blue">1-5背景色と文字色変更</h3>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h1 style="color:red">２章日付・時刻の表示と変数</h1>
+<h3 style="color:blue">2-1日付・時刻を表示</h3>
+<script language="javascript">
+document.write(Date());
+
+</script>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h3 style="color:blue">2-2日付・時刻データを加工して表示</h3>
+<script language="javascript">
+hiduke=new Date();
+nen=hiduke.getFullYear();
+tuki=hiduke.getMonth();
+hi=hiduke.getDate();
+ji=hiduke.getHours();
+fun=hiduke.getMinutes();
+byo=hiduke.getSeconds();
+document.write("今は");
+document.write(nen,"年",tuki+1,"月",hi,"日");
+document.write(ji,"時",fun,"分",byo,"秒です");
+</script>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h3 style="color:blue">2-3アクセス時の時刻をテキストボックスに表示</h3>
+●ようこそ、科学図書館へ●<br>
+あなたが入場した時刻は
+<input type="text" name="acc" size="10">
+
+<script language="javascript">
+hiduke=new Date();
+ji=hiduke.getHours();
+fun=hiduke.getMinutes();
+acc.value=ji+"時"+fun+"分";
+</script>
+
+<!--通常の文字結合は+を使う
+ただし、document.writeでは『,』を使うことができる-->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h1 style="color:red">３章　メッセージ・マウスイベント・関数</h1>
+
+<h3 style="color:blue">メッセージとマウスイベント</h3>
+１０＋１０＝
+<a href="JavaScript:void(0)" onclick="alert('答えは「２０」です')">答えはこちら</a>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h3 style="color:blue">マウスオーバーでメッセージを表示</h3>
+
+●テキスト<br>
+
+<a href="JavaScript:void(0)" onmouseover="ninni.value='おはよう'"
+onmouseout="ninni.value=''">Good morning<br></a>
+<input type="text" size="12" name="DisplayField">
+<br>
+<br>
+<br>
+●警告メッセージ<br>
+<a href="JavaScript:void(0)" onmouseover="alert('おはよう')"
+onmouseout="ninni.value=''">Good morning<br></a>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h3 style="color:blue">3-3関数</h3>
+
+&lt;head><br>
+	&lt;title>&lt;/title><br>
+<br>
+	&lt;script language="JavaScript"><br>
+		function msg(){<br>
+		alert('答えは「２０」です');<br>
+		}<br>
+	&lt;/script><br>
+<br>
+&lt;/head><br>
+<br>
+&lt;body><br>
+<br>
+１０＋１０＝<br>
+&lt;a href="JavaScript:void(0)" onclick="msg()">答えはこちら&lt;/a><br>
+<br>
+&lt;/body><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h1 style="color:red">ロールオーバー</h1>
+<h3 style="color:blue">画像にロールオーバーを設定</h3>
+&lt;head><br>
+	&lt;title>&lt;/title><br>
+<br>
+		&lt;script language="JavaScript"><br>
+		function img_change1(){<br>
+		document.images["annai"].src="annai-1.gif";<br>
+		}<br>
+		<br>
+		function img_change2(){<br>
+		document.images["annai"].src="annai-2.gif";<br>
+		}<br>
+	&lt;/script><br>
+<br>
+&lt;/head><br>
+<br>
+&lt;body><br>
+<br>
+&lt;a href="annai.html" onMouseOver="img_change2()"<br>
+onMouseOut="img_change1()"><br>
+&lt;img src="annai-1.gif" border="0" name="annai">&lt;/a><br>
+<br>
+&lt;/body><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h3 style="color:blue">4-2文字にロールオーバーを設定</h3>
+&lt;head><br>
+	&lt;title>&lt;/title><br>
+<br>
+		&lt;script language="JavaScript"><br>
+		function aqua(ninni){<br>
+		ninni.style.color="#00ffff";<br>
+		}<br>
+		<br>
+		function black(ninni){<br>
+		ninni.style.color="#000000";<br>
+		}<br>
+	&lt;/script><br>
+<br>
+&lt;/head><br>
+<br>
+&lt;body><br>
+<br>
+&lt;a href="annai.html" onMouseOver="aqua(this)"<br>
+onMouseOut="black(this)">会社案内&lt;/a><br>
+<br>
+&lt;/body>
+<br>
+<br>
+
+<!--
+	function irogae(taisho,iro){
+	taisho.style.color=iro;
+	}
+	
+	で指定して使うことも出来る
+	
+	<a href="annai.html" onMouseOver="irogae(this,'#0000ff')"
+	onMouseOut="irogae(this,'#000000')">会社案内</a>
+
+	
+
+文字色
+-->
+・背景色を変える関数
+		.style.backgroundColor
+<br>
+<br>
+<br>
+<h4 style="color:#009900">応用編</h4>
+&lt;head><br>
+	&lt;title>rei4-2&lt;/title><br>
+<br>
+	&lt;script language="JavaScript"><br>
+		function iro(taisho,mozi,haikei){<br>
+		taisho.style.color=mozi;<br>
+		taisho.style.backgroundColor=haikei;<br>
+	}<br>
+	&lt;/script><br>
+<br>
+&lt;/head><br>
+<br>
+&lt;body><br>
+<br>
+&lt;a href="annai.html" onMouseOver="iro(this,'33ffcc','#0000ff')"<br>
+onMouseOut="iro(this,'ffffff','#000000')">会社案内&lt;/a><br>
+<br>
+&lt;a href="annai.html" onMouseOver="iro(this,'#ccffff','#ff0000')"<br>
+onMouseOut="iro(this,'cc9933','#ff99cc')">会社案内&lt;/a><br>
+<br>
+&lt;a href="annai.html" onMouseOver="iro(this,'00ff33','#009900')"<br>
+onMouseOut="iro(this,'660099','#9999cc')">会社案内&lt;/a><br>
+<br>
+&lt;a href="annai.html" onMouseOver="iro(this,'0000ff','#33ffff')"<br>
+onMouseOut="iro(this,'#000000','#ffffff')">会社案内&lt;/a><br>
+<br>
+&lt;/body><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h3 style="color:blue">画像にロールオーバーを設定</h3>
+&lt;head><br>
+	&lt;title>&lt;/title><br>
+<br>
+		&lt;script language="JavaScript"><br>
+		function pink(site){<br>
+		site.style.color="#ff00ff";<br>
+		document.images["dodai"].src="taki.gif";<br>
+		}<br>
+		<br>
+		function blue(site){<br>
+		site.style.color="#0000ff";<br>
+		document.images["dodai"].src="damy.gif";<br>
+		}<br>
+	&lt;/script><br>
+<br>
+&lt;/head><br>
+<br>
+&lt;body bgcolor="#000000"><br>
+	&lt;font size="6" color="blue">★北海道のお勧めスポット★&lt;/font><br>
+	&lt;hr color="ffffff"><br>
+	<br>
+	&lt;a href="taki.html" onMouseOver="pink(this)"<br>
+	onMouseOut="blue(this)">●滝&lt;/a><br>
+	&lt;hr color="ffffff"><br>
+	&lt;img src="damy.gif" name="dodai"<br>
+<br>
+&lt;/body><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+●例題4-3-1
+<html>
+<head>
+	<title>rei4-3-1</title>
+	<style type="text/css"><!--
+	body{
+		text-align:center;
+	}
+	table{
+		background-color:#99ff99;
+	}
+	th{
+		font-size:32px;
+		border:double 3px blue;
+	}
+	td{
+		background-color:#99cc99;
+	}
+	.menu{
+		text-align:center;
+	}
+	--></style>
+	<script lanugage="JavaScript"><!--
+	function over(moji,gazou){
+		moji.style.color="#ff00ff";
+		document.images["dodai"].src=gazou;
+	}
+	function out(moji){
+		moji.style.color="#0000ff";
+		document.images["dodai"].src="damy.gif";
+	}
+	//--></script>
+</head>
+<body>
+	<table border>
+	<tr>
+		<th colspan="2">★北海道のお勧めスポット★</th>
+	</tr>
+	<tr>
+		<td colspan="2" class="menu">●ＭＥＮＵ●</td>
+	</tr>
+	<tr>
+		<td><a href="taki.html" onMouseOver="over(this,'taki.gif')"
+		onMouseOut="out(this)">■滝</a></td>
+		<td rowspan="5"><img src="damy.gif" name="dodai"></td>
+	</tr>
+	<tr>
+		<td><a href="daichi.html" onMouseOver="over(this,'daichi.gif')"
+		onMouseOut="out(this)">■大地</a></td>
+	</tr>
+	<tr>
+		<td><a href="pony.html" onMouseOver="over(this,'pony.gif')"
+		onMouseOut="out(this)">■ポニー</a></td>
+	</tr>
+	<tr>
+		<td><a href="kitune.html" onMouseOver="over(this,'kitune.gif')"
+		onMouseOut="out(this)">■キタキツネ</a></td>
+	</tr>
+	<tr>
+		<td><a href="rafting.html" onMouseOver="over(this,'rafting.gif')"
+		onMouseOut="out(this)">■ラフティング</a></td>
+	</tr>
+	<tr>
+		<td colspan="2">　</td>
+	</tr>
+	</table>
+</body>
+</html>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2 style="color:red">５章入力フォームと計算</h2>
+<h3 style="color:blue">5-1簡単な計算</h3>
+<head>
+	<title>rei5-1</title>
+
+		<script language="JavaScript">
+		function keisan(){
+			goukei.value=5000*kosuu.value;
+		}
+	</script>
+
+</head>
+
+<body>
+	●マグカップ(￥5000)
+	<hr>
+	個数<input type="text" size="8" name="kosuu"><br>
+	合計<input type="text" size="8" name="goukei"><br>
+	<hr>
+	<input type="button" value="計算" onClick="keisan()">
+
+</body>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h3 style="color:blue">5-1-1三角形の面積</h3>
+<head>
+	<title>rei5-1-1</title>
+
+		<script language="JavaScript">
+		function keisan(){
+			F.menseki.value=F.teihen.value*F.takasa.value/2;
+		}
+	</script>
+
+</head>
+
+<body>
+	●三角形の面積	<hr>
+	<form name="F">
+	底辺(cm)<input type="text" size="8" name="teihen"><br>
+	高さ(cm)<input type="text" size="8" name="takasa"><br>
+	面積(c㎡)<input type="text" size="8" name="menseki"><br>
+	<hr>
+	<input type="button" value="計算" onClick="keisan()">
+	<input type="reset">
+	</form>
+
+</body>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h3 style="color:blue">メッセージとして表示</h3>
+<head>
+	<title>rei5-1-2</title>
+
+</head>
+
+<body>
+	●三角形の面積
+	<hr>
+	底辺(cm)<input type="text" size="8" name="teihen"><br>
+	高さ(cm)<input type="text" size="8" name="takasa"><br>
+	<hr>
+	<input type="button" value="計算" onClick="alert('面積は'+teihen.value*takasa.value/2)">
+
+</body>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h3 style="color:blue">5-2消費税を計算</h3>
+<head>
+	<title>rei5-2</title>
+
+		<script language="JavaScript">
+		function keisan(){
+			kingaku=4890*kosuu.value;
+			goukei.value=kingaku;
+			zei.value=kingaku*0.05
+			zeikomi.value=Math.floor(kingaku*1.05);
+		<!--zeikomi.value=parseInt(goukei.value)+Math.floor(parseInt(zei.value));
+		でもOK。parseInt()は数字として認識させる
+		-->
+		}
+	</script>
+
+</head>
+
+<body>
+	●マグカップ(￥4890)
+	<hr>
+	個数<input type="text" size="8" name="kosuu"><br>
+	合計<input type="text" size="8" name="goukei"><br>
+	消費税<input type="text" size="8" name="zei"><br>
+	税込合計<input type="text" size="8" name="zeikomi"><br>
+	<hr>
+	<input type="button" value="計算" onClick="keisan()">
+
+</body>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h3 style="color:blue">5-3コンボボックスを使って自動計算</h3>
+<head>
+	<title>rei5-1</title>
+
+		<script language="JavaScript">
+		function keisan(){
+			goukei.value=5000*kosuu.value;
+		}
+	</script>
+
+</head>
+
+<body>
+	●マグカップ(￥5000)
+	<hr>
+	個数<select name="kosuu" onChange="keisan()">
+	<option value="0" selected>0
+	<option value="1">1
+	<option value="2">2
+	<option value="3">3
+	<option value="4">4
+	</select>	
+	合計<input type="text" size="8" name="goukei" value="0"><br>
+	<hr>
+	
+</body>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h2 style="color:red">６章　入力データのチェック</h2>
+<h3 style="color:blue">テキストボックスのチェック</h3>
+<head>
+	<title>rei6-1</title>
+
+		<script language="JavaScript">
+		function kakunin(){
+			if(shimei.value==""){
+			alert("氏名を入力して下さい。");
+		}
+	}
+	</script>
+</head>
+
+<body>
+	<hr>
+	氏名<input type="text" size="12" name="shimei">（必須）<br>
+	<hr>
+	<input type="button" value="確認" onClick="kakunin()">
+	
+</body>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h3 style="color:blue">6-2ラジオボタンのチェック</h3>
+<head>
+	<title>rei6-2</title>
+
+		<script language="JavaScript">
+		function kakunin(){
+			if(sex[0].checked==false&&sex[1].checked==false){
+			alert("性別を選択して下さい");
+		}
+	}
+	</script>
+</head>
+
+<body>
+	<hr>
+	性別<span style="color:red">（必須）</span><br>
+	男<input type="radio" name="sex" value="男">
+	女<input type="radio" name="sex" value="女"><br>
+	<hr>
+	<input type="button" value="確認" onClick="kakunin()">
+	
+</body>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h3 style="color:blue">6-3繰り返し処理</h3>
+<head>
+	<title>rei6-3</title>
+
+		<script language="JavaScript"><!--
+		function kakunin(){
+			kosuu=address.length;
+			for(i=0;i<kosuu-1;i++){
+				if(address.elements[i].value==""){
+					alert("入力されていない項目があります");
+					return;
+				}
+			}
+			alert("ＯＫ！")
+		}
+	
+	不等号はエディターが<>と判断してしまい、色がついて紛らわしい時は
+	コメントとして記述すると良い。
+	javascriptのコメントは最後に//を付ける
+	
+	//--></script>
+</head>
+
+<body>
+	<form name="address">
+	氏名<input type="text" size="20" name="shimei"><br>
+	郵便番号<input type="text" size="20" name="yubin"><br>
+	住所<input type="text" size="20" name="jusho"><br>
+	電話番号<input type="text" size="20" name="tel"><br>
+	<input type="button" value="確認" onClick="kakunin()">
+	
+</body>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h3 style="color:blue">6-3-1for文の練習1</h3>
+<head>
+	<title>rei6-3-1</title>
+	
+</head>
+
+<body>
+	<script language="JavaScript"><!--
+	for(i=0; i<3; i++){
+		document.write("<h2>こんにちは</h2>");
+		}
+	//--></script>
+	
+</body>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h3 style="color:blue">6-3-2for文の練習2</h3>
+<head>
+	<title>rei6-3-1</title>
+
+		
+</head>
+
+<body>
+	<script language="JavaScript"><!--
+	for(i=1; i<4; i++){
+		document.write("<h2>こんにちは",i,"回目</h2>");
+		
+		
+		}
+	//--></script>
+	
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

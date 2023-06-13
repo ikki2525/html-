@@ -1,0 +1,1039 @@
+<html>
+<head>
+	<title>htmlタグ一覧</title>
+</head>
+<body>
+
+見出しタグ：&lt;h1&gt;～&lt;/h1&gt;
+<br>
+<h1>見出しタグ</h1>
+<br>
+<br>
+<br>
+
+<h3 style="color:red">P38リンク</h3>
+&lt;a href="URL"&gt;～&lt;/a&gt;
+<br>
+<a href="http://www.yahoo.co.jp/">Yahoo！ Japan</a>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h3 style="color:red">P58スタイルシート（文字色指定）</h3>
+&lt;span style="color:値"&gt;～&lt;/span&gt;
+<br>
+<span style="color:blue">青色です。</h3>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h3 style="color:red">P60スタイルシートをヘッド内に描く場合</h3>
+		&lt;style type="text/css"&gt;<br>
+		&lt;!--<br>
+		適用タグ{ﾌﾟﾛﾊﾟﾃｨ：値}<br>
+		例）<br>
+		body{background-color:#99ccff}<br>
+		h1{background-color:#0000ff;<br>
+			color:#ffffff;}<br>
+		p{font-size:large;}<br>
+		--&gt;<br>
+		&lt;/style&gt;<br>
+		※複数指定する場合は；を使う<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		
+		<h3 style="color:red">P62文字サイズ</h3>
+		&lt;span style="font-size:値"&gt;～&lt;/span&gt;
+		<br>
+		<span style="font-size:large">これはlarge</span><br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		
+		<h3 style="color:red">P64リンク部分の指定（headへ挿入）</h3>
+		a:link（未読）　	a:visited（訪問済み）<br>
+		a:hover（マウスを合わせた時）　a:active（選択された状態）<br>
+		<br>
+			&lt;style type="text/css"&gt;&lt;!--<br>
+a:link｛color:green;}<br>
+a:visited{color:gray;}<br>
+	--&gt;&lt;/style&gt;<br>
+<br>
+<br>
+<br>
+
+<h3 style="color:red">リンクの下線を消す</h3>
+a:link{ﾌﾟﾛﾊﾟﾃｨ:値;text-decoration:none}<br>
+<br>
+<h3 style="color:red">マウスが合った時に下線を表示させる</h3>
+a:hover{ﾌﾟﾛﾊﾟﾃｨ:値;text-decoration:underline}<br>
+<br>
+<br>
+<br>
+
+<h3 style="color:red">P67罫線</h3>
+&lt;hr&gt;　終了タグはない
+<br>
+<hr><br>
+	&lt;style type="text/css"&gt;<br>
+	&lt;!--<br>
+	hr{background-color:red;<br>
+	height:20px}<br>
+	--&gt;<br>
+	&lt;/style&gt;<br>
+	<br>
+	で、罫線の色指定<br>
+	
+	<style type="text/css">
+	<!--
+	hr{background-color:red;
+	height:20px}
+	-->
+	</style>	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	
+	<h3 style="color:red">P70リスト</h3>
+●連番付き箇条書きリスト<br>
+	&lt;ol&gt;<br>
+		&lt;li&gt;項目<br>
+		&lt;li&gt;項目<br>
+		&lt;li&gt;項目<br>
+	&lt;/ol&gt;<br>
+	<br>
+	<br>
+	<br>
+	
+		3大栄養素
+<ol>
+	<li>たんぱく質
+	<li>脂質
+	<li>炭水化物
+</ol><br>
+<br>
+●P71連番なし<br>
+	&lt;ul&gt;<br>
+		&lt;li&gt;項目<br>
+		&lt;li&gt;項目<br>
+		&lt;li&gt;項目<br>
+	&lt;/ul&gt;<br>
+	<br>
+			3大栄養素
+<ul>
+	<li>たんぱく質
+	<li>脂質
+	<li>炭水化物
+</ul><br>
+	<br>
+	<br>
+	
+●P71定義型リスト
+		&lt;dl&gt;<br>
+		&lt;dt&gt;見出し項目<br>
+		&lt;dd&gt;説明<br>
+		&lt;/dl&gt;<br>
+	<br>
+				3大栄養素
+<dl>
+	<dt>たんぱく質
+	<dd>人の体を形成する栄養素
+	</dl><br>
+	<br>
+	<br>
+	<br>
+<h3 style="color:red">●P72様々なスタイルのリスト</h3>
+		&lt;style type="text/css"&gt;<br>
+	&lt;!--<br>
+	ol{list-style-image:URL}<br>
+	--&gt;<br>
+	&lt;/style&gt;<br>
+	<br>
+	※値<br>
+	disc：黒丸<br>
+	circle：白丸<br>
+	square：四角<br>
+	decimal：算用数字<br>
+	lower-roman：小文字のローマ数字<br>
+	upper-roman:大文字のローマ数字<br>
+	lower-alpha：小文字のアルファベット<br>
+	upper-alpha：大文字のアルファベット<br>
+	<br>
+	<br>
+	<br>
+	
+<h3 style="color:red">●P73リストのマークに画像を使用</h3>
+		&lt;style type="text/css"&gt;<br>
+	&lt;!--<br>
+	ol{list-style-image:url(パス)}<br>
+	--&gt;<br>
+	&lt;/style&gt;<br>
+	<br>
+	※補足<br>
+	&lt;ol start="5"&gt;を使うと、好きな所から始められる<br>
+	<br>
+	&lt;li value="9"&gt;を使うと好きな番号を指定できる<br>
+	<br>
+	<br>
+	<br>
+	
+	<h3 style="color:red">P74枠線の指定</h3><br>
+	&lt;style type="text/css"&gt;<br>
+	&lt;!--<br>
+	適用タグ{border-style:値}
+	--&gt;<br>
+	&lt;/style&gt;<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+
+<h3 style="color:red">	●P76枠線の太さ指定</h3>
+	&lt;style type="text/css"&gt;<br>　　　<!--table border="値"でも線が出る-->
+	&lt;!--<br>
+	適用タグ{border-width:値}
+	--&gt;<br>
+	&lt;/style&gt;<br>
+	<br>
+	<br>
+	<br>
+		
+		
+	●P78枠線の色指定<br>
+		&lt;style type="text/css"&gt;<br>
+	&lt;!--<br>
+	適用タグ{border-color:値}
+	--&gt;<br>
+	&lt;/style&gt;<br>
+	<br>
+	<br>
+	<br>
+	
+	
+	●P79borderﾌﾟﾛﾊﾟﾃｨでまとめて設定<br>
+	適用タグ{border:太さ スタイル 色}<br>
+	<br>
+	　　　h1{border:solid 10px blue}<br>
+	<br>
+	<h1 style="border:solid 10px blue">例えばこんな感じ</h1><br>
+	<br>
+	<br>
+	<br>
+	
+	
+	<h3 style="color:red">P80表組</h3>
+	&lt;table&gt;&lt;tr&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;<br>
+	<br>
+	&lt;table&gt;表<br>
+	&lt;tr&gt;行<br>
+	&lt;td&gt;列<br>
+	<br>
+	<table border="1" width="200"><br>
+		<tr>
+			<td>東</td>
+			<td>　</td>
+		</tr>
+		<tr>
+			<td>南</td>
+			<td>北</td>
+		</tr>
+	</table>
+	<br>
+	<br>
+	<br>
+	
+	
+●P81テーブルの幅
+	<table width="200"><br>
+	※値はpx（数字のみ）か％（数字％）<br>
+	<br>
+	<br>
+	
+●P82罫線の入ったテーブル<br>
+	<br>
+	<br>
+	
+●P83枠線の形式の変更<br>
+	<table border="1" rules="cols"><br>
+		<tr>
+			<td>東</td>
+			<td>　</td>
+		</tr>
+		<tr>
+			<td>南</td>
+			<td>北</td>
+		</tr>
+	</table><br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<h3 style="color:red">テーブルにキャプションと見出しを付ける</h3>
+	&lt;table border="5" >
+		&lt;caption>プロ野球&lt;/caption>
+		&lt;tr>&lt;th>ダイエー&lt;/th>&lt;th>阪神&lt;/th>&lt;/tr>
+		&lt;tr>&lt;td>西武&lt;/td>&lt;td>中日&lt;/td>&lt;/tr>
+		&lt;tr>&lt;td>近鉄&lt;/td>&lt;td>巨人&lt;/td>&lt;/tr>
+	&lt;/table>
+	<br>
+	<br>
+		<table border="5" width="70%">
+<caption>プロ野球</caption>
+		<tr><th>ダイエー</th><th>阪神</th></tr>
+		<tr><td>ダイエー</td><td>阪神</td></tr>
+		<tr><td>西武</td><td>中日</td></tr>
+		<tr><td>近鉄</td><td>巨人</td></tr>
+	</table>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+●P88セル間に余白を取る<br>
+	<table border="5" cellspacing="20">
+		<caption>プロ野球</caption>
+		<tr><th>パリーグ</th><th>セリーグ</th></tr>
+		<tr><td>ダイエー</td><td>阪神</td></tr>
+		<tr><td>西武</td><td>中日</td></tr>
+		<tr><td>近鉄</td><td>巨人</td></tr>
+	</table>
+	<br>
+	<br>
+		<table border="5" cellpadding="20">
+		<caption>プロ野球</caption>
+		<tr><th>パリーグ</th><th>セリーグ</th></tr>
+		<tr><td>ダイエー</td><td>阪神</td></tr>
+		<tr><td>西武</td><td>中日</td></tr>
+		<tr><td>近鉄</td><td>巨人</td></tr>
+	</table>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+<h3 style="color:red">P90複数行（列）にわたるセル作成するには</h3>
+		<table border="5">
+		<caption>ドイツ語の定冠詞</caption>
+		<tr><th rowspan="2">　</th><th>単数</th><th></th><th></th><th>複数</th></tr>
+		<tr><td>男性</td><td>中性</td><td>女性</td></tr>
+		<tr><th>1格</th><td>der</td><td>das</td><td>die</td><td>die</td></tr>
+		<tr><th>2格</th><td>des</td><td>des</td><td>der</td><td>der</td></tr>
+		<tr><th>3格</th><td>dem</td><td>dem</td><td>der</td><td>den</td></tr>
+		<tr><th>4格</th><td>den</td><td>das</td><td>die</td><td>die</td></tr>
+		</table>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	◆結合セルの例
+		<table border="5">
+	<tr><td colspan="2">Ａ</td><td rowspan="2">Ｂ</td></tr>
+	<tr><td rowspan="2">Ｄ</td><td>Ｅ</td></tr>
+	<tr><td colspan="2">Ｃ</td></tr>
+	</table><br>
+	<br>
+	<br>
+	
+	<table border="5">
+	<tr><td>1</td><td>2</td><td>3</td><td>4</td></tr>
+	<tr><td>12</td><td rowspan="2" colspan="2">13</td><td>5</td></tr>
+	<tr><td>11</td><td>6</td></tr>
+	<tr><td>10</td><td>9</td><td>8</td><td>7</td></tr>
+	</table><br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	
+●P92テーブルをｸﾞﾙｰﾌﾟ化するには<br>
+	<br>◆例
+	<table border="5" width="300" rules="groups">
+		<caption>シェークスピア四大悲劇</caption>
+<thead>
+		<tr><th>作品名</th><th>年</th></tr>
+</thead>
+<tbody>
+		<tr><td>ハムレット</td><td>1601</td></tr>
+		<tr><td>オセロー</td><td>1604</td></tr>
+</tbody>
+<tbody>		
+		<tr><td>リア王</td><td>1605</td></tr>
+		<tr><td>マクベス</td><td>1606</td></tr>
+</tbody>
+	</table><br>
+<br>
+<br>※tbodyは複数設定可
+<br>
+<br>
+<br>
+
+●P94列ごとにスタイルを指定するには<br>
+	<br>◆例
+	<table border="5">
+		<caption>ドイツ語の定冠詞</caption>
+		<col style="background-color:aqua;">
+		<col span="3" style="background-color:blue;color:white">
+		<col style="background-color:lime;">
+		<tr><th>　</th><th>男性</th><th>中性</th><th>女性</th><th>複数</th></tr>
+		<tr><th>1格</th><td>der</td><td>das</td><td>die</td><td>die</td></tr>
+		<tr><th>2格</th><td>des</td><td>des</td><td>der</td><td>der</td></tr>
+		<tr><th>3格</th><td>dem</td><td>dem</td><td>der</td><td>den</td></tr>
+		<tr><th>4格</th><td>den</td><td>das</td><td>die</td><td>die</td></tr>
+		</table><br>
+<br>
+<br>
+<br>
+<br>
+	<br>
+	<br>
+	
+	●テーブルの線を重ねる（1本になる）<br>
+	border-collapse:collapse;
+	<br>
+<!--	<style type="text/css"><!--
+table{border-collapse:collapse;
+border:solid 5px blue}
+th{border:solid 5px yellow}
+td{border:solid 5px hotpink}
+-->-->
+</style><br>
+<br>
+<br>
+<br>
+<br>
+
+	
+	<h3 style="color:red">P100画像を表示するには</h3>
+	&lt;img src="（画像までのパス）"&gt;<br>
+	<br>
+	<br>
+	<img src="IMAGE/kobe1.jpg">
+	<br>
+	<br>
+	※画像の幅と高さ<br>
+	width="幅"<br>
+	height="高さ"<br>
+	<br>
+	<img src="画像のパス" width="値" height="値" alt="風見鶏の館">
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	●P102画像をリンクボタンに<br>
+	&lt;a href="リンク先URL"&gt;
+	&lt;img src="画像パス" alt="ボタン"&gt;
+	&lt;/a&gt;
+	<br>
+	<br>
+	<a href="www.rearize.com">
+	<img src="IMAGE/button.gif" alt="ボタン">
+	</a>
+<br>
+<br>
+<br>
+<br>
+<br>
+	&lt;style type="text/css"&gt;&lt;!--
+img{border-style:none;}
+--&gt;
+&lt;/style&gt;で枠線を消すことができる。
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<h3 style="color:red">P104背景に画像を読み込むには</h3>
+	background-image:url(パス)　←（）を忘れずに!!<br>
+	<br>
+		<style type="text/css"><!--
+body{background-image:url(IMAGE/check.gif);
+background-attachment:fixed;
+background-repeat:repeat-y;
+background-position:right;}
+	--></style><br>
+	<br>
+	※background-repeat:repeat-値;で表示方法を変えられる<br>
+	値：repeat-x（水平）　repeat-y（垂直）　no-repeat（並べない）<br>
+	<br>
+	<br>
+	<br>
+	<br>
+		
+	●P106画像を任意の位置へ指定<br>
+	background-position:値(X座標) 値(Y座標);<br>
+	Ｘ座標：left(左)　　center(中央)　　right(右)<br>
+	Ｙ座標：top(上)　　center(中央)　　bottom(下)<br>
+	<br>
+	<br>
+	<br>
+	
+	●P105背景画像のスクロールの有無<br>
+	background-attachment:値<br>
+	値：scroll(有)　　　fixed(無)<br>
+	<br>
+		&lt;style type="text/css"&gt;&lt;!--<br>
+body{background-image:url(IMAGE/check.gif);<br>
+background-attachment:fixed;}<br>
+	--&gt;&lt;/style&gt;<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<h3 style="color:red">P108斜体や太字を指定するには</h3>
+	斜体　font-style:italic;<br>
+		<style type="text/css"><!--
+p{font-style:italic;}
+	--></style><br>
+		<p>文字を斜体にしています。</p><br>
+		<br>
+		
+	太字　fonto-weight:bold;<br>
+			<style type="text/css"><!--
+p{font-weight:bold;}
+	--></style><br><br>
+	<p>文字を太字にしています。</p><br>
+			
+	<!--html　　　不推奨<br>
+	斜体&lt;i>～&lt;/i><br>
+	
+	太字&lt;b>～&lt;/b><br>
+	<br>-->
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	●P110フォントの種類を指定するには<br>
+	font-family:"フォント名",フォントｸﾞﾙｰﾌﾟ名<br>
+	（font-family:"ＭＳ ゴシック","平成明朝",serif）<br>
+	<br>
+		<style type="text/css"><!--
+h1{font-family:"ＭＳ 明朝"}
+	--></style><br>
+	<h1>これはＭＳ 明朝です</h1>
+	<br>
+	<br>
+	<br>
+	
+	●P112文字に線を付けるには<br>
+	style="text-decoration:飾りの種類"<br>
+	上線：overline<br>
+	下線：underline<br>
+	抹消線：line-through<br>
+	<br>
+		<p style="text-decoration:overline">上線が付きます。</p>
+	<p style="text-decoration:underline">下線が付きます。</p>
+	<p style="text-decoration:line-through">抹消線が付きます。</p>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	●P114大文字・小文字を指定するには<br>
+	text-transform:活字ケース指定<br>
+	大文字：uppercase<br>
+	小文字：lowercase<br>
+	各単語の先頭だけ大文字：capitalize<br>
+	<br>
+		<p>
+		all charachters are put in upper case
+	</p>
+	<p>
+		ALL CHARACTERS ARE PUT IN LOWER CASE
+	</p>
+	<p>
+		the first characters of each word is put in upper case
+	</p><br>
+	<br>↓
+	
+	<p style="text-transform:uppercase">
+		all charachters are put in upper case
+	</p>
+	<p style="text-transform:lowercase">
+		ALL CHARACTERS ARE PUT IN LOWER CASE
+	</p>
+	<p style="text-transform:capitalize">
+		the first characters of each word is put in upper case
+	</p>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	●P116行間を指定するには<br>
+	line-height:数値+単位　※フォントサイズによっては文字が重なってしまう<br>
+	line-height:比率（文字の大きさに対して）<br>
+	line-height:normal（ブラウザの設定により、もっとも適当とされる行間になる）<br>
+	style="line-height:値"<br>
+	<br>
+	
+		<p style="line-height:normal">
+		この文章の行間は標準です。この文章の行間は標準です。この文章の行間は標準です。この文章の行間は標準です。この文章の行間は標準です。この文章の行間は標準です。この文章の行間は標準です。この文章の行間は標準です。この文章の行間は標準です。この文章の行間は標準です。
+	</p><br>
+	<br>
+	
+	<p style="line-height:2">
+		この文章の行間は2指定です。この文章の行間は2指定です。この文章の行間は2指定です。この文章の行間は2指定です。この文章の行間は2指定です。この文章の行間は2指定です。この文章の行間は2指定です。この文章の行間は2指定です。この文章の行間は2指定です。この文章の行間は2指定です。
+	</p><br>
+	<br>
+	
+	<p style="line-height:300%">
+		この文章の行間は300%指定です。この文章の行間は300%指定です。この文章の行間は300%指定です。この文章の行間は300%指定です。この文章の行間は300%指定です。この文章の行間は300%指定です。この文章の行間は300%指定です。この文章の行間は300%指定です。この文章の行間は300%指定です。この文章の行間は300%指定です。
+	</p><br>
+	<br>
+	<br>
+	<br>
+	
+	●P118文字間隔・単語間隔を指定するには<br>
+	leter-spacing:数値+単位<br>
+	<br>
+	word-spacing:数値+単位<br>
+	<br>
+		<p style="letter-spacing:2em">文字間隔を2emに指定しています。</p>
+<br>
+		<p style="word-spacing:2em">the word spacing between each word
+		in this paragraph is increased by 2em.</p>
+<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<h3 style="color:red">P122classセレクタとは</h3>
+	.クラス名{ﾌﾟﾛﾊﾟﾃｨ:値}<br>
+	&lt;タグ class="クラス名"><br>
+	<br>
+	<br>
+	<br>
+	
+	<table border="2">
+		<caption>シェークスピア四大悲劇</caption>
+		<tr>
+			<th>作品名</th><th>年</th></tr>
+		<tr>
+			<td>ハムレット</td><td>1601</td></tr>
+		<tr>
+			<td>オセロー</td><td>1604</td></tr>
+		<tr>
+			<td>リア王</td><td>1605</td></tr>
+		<tr>
+			<td>マクベス</td><td>1606</td></tr>
+	</table>
+	<br>
+	　　↓<br>
+	　　
+	<style type="text/css"><!--
+.odd{background-color:blue;
+color:white}
+
+.even{background-color:aqua;
+color:blue}
+-->
+</style><br>
+
+		<table border="2">
+		<caption>シェークスピア四大悲劇</caption>
+		<tr class="odd">
+			<th>作品名</th><th>年</th></tr>
+		<tr class="even">
+			<td>ハムレット</td><td>1601</td></tr>
+		<tr class="odd">
+			<td>オセロー</td><td>1604</td></tr>
+		<tr class="even">
+			<td>リア王</td><td>1605</td></tr>
+		<tr class="odd">
+			<td>マクベス</td><td>1606</td></tr>
+	</table>
+<br>
+<br>
+<br>
+<br>
+
+	●P124異なるタグへのスタイル適用<br>
+	<br>
+		<h1>私の好きな作家たち</h1>
+	<p>このページでは<br>
+	私の好きな作家の作品について<br>
+	感想をつづっています。
+	</p>
+
+	<h2>中川次郎</h2>
+	<p>誰もが知っているミステリー作家。<br>
+	私も大好きです。
+	</p>
+	　　↓<br>
+	　　<br>
+		<title>classセレクタ</title>
+	<style type="text/css"><!--
+.header{border-style:dashed;
+border-color:#00ff33;
+background-color:#ccffcc;
+color:#009900;}
+	--></style><br>
+	<br>
+		<h1 class="header">私の好きな作家たち</h1>
+	<p>このページでは<br>
+	私の好きな作家の作品について<br>
+	感想をつづっています。
+	</p>
+
+	<h2 class="header">中川次郎</h2>
+	<p>誰もが知っているミステリー作家。<br>
+	私も大好きです。
+	</p>
+	<br>
+	<br>
+	<br>
+	●P125複数のクラス名を指定する<br>
+		<style type="text/css"><!--
+.header{border-style:dashed;
+border-color:#00ff33;}
+
+.color{background-color:#ccffcc;
+color:#009900;}
+	--></style><br>
+	<br>
+		<h1 class="header color">私の好きな作家たち</h1>
+	<p class="color">このページでは<br>
+	私の好きな作家の作品について<br>
+	感想をつづっています。
+	</p>
+
+	<h2 class="header　color">中川次郎</h2>
+	<p class="color">誰もが知っているミステリー作家。<br>
+	私も大好きです。
+	</p>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	●P126タグに影響されないでスタイルを適用するには<br>
+	&lt;div>&lt;/div>（ブロック要素）<br>
+	&lt;span>&lt;/span>（インライン要素）<br>
+	<br>	<style type="text/css"><!--
+	.a { color:#cc00aa;
+		background-color:#ffcc00}
+	.b { color:#ffcc00;
+		background-color:#cc00aa}
+	--></style><br>
+&lt;div>&lt;/div>
+		<div class="a">Welcome to</div>
+	<div class="b">My Home Page</div>
+	<br>
+	<br>
+	&lt;span>&lt;/span>
+	<span class="a">Welcome to</span>
+	<span class="b">My Home Page</span>
+	<br>
+	<br>
+&lt;div>&lt;/div>	＆&lt;span>&lt;/span>
+	<div class="a">Welcome to
+	<span class="b">My</span>
+	 Home Page
+	 </div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<h3 style="color:red">P128高さ・幅を指定するには</h3>
+	※P129高さ・幅設定時の注意点<br>
+	<br>
+	heigh:数値+単位<br>
+	width:数値+単位<br>
+	<br>
+		<style type="text/css"><!--
+.rect{width:200px;
+height:50px;
+background-color:#99ff00}
+	--></style><br>
+		<div class="rect">
+	この文章の表示領域の幅と高さが設定されます。
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<h3 style="color:red">P130マージンを指令するには</h3>
+	※<br>
+	borderの内側の余白＝padding<br>
+	borderの外側の余白＝margin<br>
+	上下左右の余白は大きい方が優先されるため、+にはならない。<br>
+	<br>
+		<style type="text/css"><!--
+.margin{margin-top：15px;
+		margin-bottom:30px;
+		margin-left:50px;
+		margin-right:20px;
+		background-color:#6699cc
+		}
+	--></style><br>
+		<div class="margin">上15px、下30px、左50px、右20pxのマージン</div>
+	<div class="margin">上15px、下30px、左50px、右20pxのマージン</div>
+<br>
+	<br>
+	P131※マージンプロパティを使う<br>
+	margin：15px 20px 30px 50px<br>
+	<span style="color:red">※１個：上下左右<br>
+	　２個：上下　左右<br>
+	　３個：上　左右　下<br>
+	　４個：上　右　下　左<br>
+	　の順に適用される</span><br>
+	<br>
+	<h4 style="color:red">☆margin:auto（左右の余白が均等になる）</h4><br>
+	<br>
+	<br>
+	
+	<h3 style="color:red">P132パディングを指定するには</h3>
+		<style type="text/css">
+	<!--
+.padding{padding-top:20px;
+		padding-bottom:30px;
+		padding-left:100px;
+		padding-right:150px;
+		background-color:#cc9999
+}
+	-->
+	</style><br>
+	<div class="padding">パデイングは指定したタグの中に含まれる要素（この場合は文字）との距離のことを指します。</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<h3 style="color:red">P134テキストの位置揃えを指定するには</h3>
+	text-align:値<br>
+	<br>
+	&lt;div align="値">（不推奨）<br>
+	<br>
+	<br>
+		<style type="text/css"><!--
+	.center{text-align:center;
+		background-color:lime;
+		}
+	--></style><br>
+		<div class="center">テキストが中央揃えになります。</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<h3 style="color:red">P136縦方向の位置揃えを設定するには</h3>
+	html（不推奨）<br>
+	　上付き&lt;sup><br>
+	　下付き&lt;sub><br>
+	<br>
+	<br>vertical-align:位置<br>
+	<br>
+		<style type="text/css">
+	<!--
+.sup{vertical-align:super}
+.sub{vertical-align:sub}
+	-->
+	</style>
+	
+		<p>
+	2<span class="sup">2</span>=4
+	</p>
+	<p>
+	水の化学式はH<span class="sub">2</span>Oです。	
+	</p>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<h3 style="color:red">P137画像とテキストの位置関係</h3>
+		<img src="IMAGE/kobe1.jpg" alt="風見鶏の館"
+	style="vertical-align:middle">
+	北野異人館にある「風見鶏の館」<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<h3 style="color:red">P138位置の指定をするには</h3>
+	position:absolute（絶対位置）<br>
+	position:absolute;top:30px;left:100px;<br>
+	<br>
+	<!--<style type="text/css"><!--
+	.a{
+		position:absolute;
+		top:30px;
+		left:100px;
+		width:200px;
+		height:200px;
+		background-color:#9c6;
+		}
+	.b{
+		position:absolute;
+		top:130px;
+		left:200px;
+		width:200px;
+		height:200px;
+		background-color:#639;
+		}
+	--></style>
+	<div class="a"></div>
+	<div class="b"></div>-->
+	<br>
+　<h4 style="color:red">※重なり順は　z-index:数字　で指定できる</h4>
+	<br>
+	<!--<style type="text/css"><!--
+	.a { 
+		position:absolute;
+		top:30px;
+		left:50px;
+		width:100px;
+		height:100px;
+		background-color:#9c6;
+		z-index:3}
+
+	.b {
+		position:absolute;
+		top:80px;
+		left:100px;
+		width:100px;
+		height:100px;
+		background-color:#639;
+		z-index:2}
+
+	.c {
+		position:absolute;
+		top:130px;
+		left:150px;
+		width:100px;
+		height:100px;
+		background-color:#f63;
+		z-index:1}
+	--></style>
+			<div class="a"></div>
+	<div class="b"></div>
+	<div class="c"></div>-->
+	<br>
+	<br>
+	<br>
+	
+	<h3 style="color:red">P140テキストの回りこみを設定するには</h3>
+	回り込み　float:位置<br>
+	回り込み解除　clear:位置　　right・left・both（どちらに回りこんでいても解除になる）<br>
+	<br>
+	img{float:right}（画像が右）<br>
+	img{float:left}　（画像が左）<br>
+	<br>
+		<style type="text/css"><!--
+.right{float:right}
+	--></style>
+	
+		<img class="right" src="IMAGE/kobe1.jpg" alt="風見鶏の館">
+	<p>赤いレンガが印象的な建物です。屋根の上にある風見鶏からこの通称が付いています。国の重要文化財に指定されています。</p>
+
+	<br>
+	<br>
+	<br>
+	<br>
+	
+	<h3 style="color:red">P142フォトエッセイページを作ろう</h3>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
